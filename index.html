@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Parking</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="s
+ha384-
+Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(https://media.istockphoto.com/photos/dealer-new-cars-stock-picture-id480652712?k=20&m=480652712&s=612x612&w=0&h=dbyTkQ3-PJJMAlNAR2hGxPWX1ODvSJspuDsdvQmOKlI=);background-repeat: no-repeat;background-size: cover;">
+<div class="header">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-12 text-center" id="header">
+<h1> Parking Lot Management System</h1>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-6 text-center mb-">
+<h2 class="register" style="background-color:black;color:white;">Registration Form</h2>
+<form action="save.php" method="post">
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text" id="owner">Vehicle Owner Name:</span>
+</div>
+<input type="text" name="owner_name" class="form-control">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text"> Vehicle Name:</span>
+</div>
+<input type="text" name="vehicle_name" class="form-control">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text"> Vehicle Number:</span>
+</div>
+<input type="text" name="vehicle_number" class="form-control">
+</div>
+<div class="input-group mb-3">
+<div class="input-group-prepend">
+<span class="input-group-text"> Entry Date:</span>
+</div>
+<input type="date" name="entry_date" class="form-control">
+</div>
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text">Exit Date:</span>
+</div>
+<input type="date" name="exit_date" class="form-control">
+</div>
+<input type="button" onclick="click()" value=SAVE class="btn btn-primary mt-3">
+</form>
+</div>
+<div class="col-md-6">
+</div>
+</div>
+</div>
+</div>
+<section>
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<h2 class="register1">All Vehicle Records</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="input-group">
+<div class="input-group-prepend">
+<span class="input-group-text" >Search</span>
+</div>
+<input type="text" class="formcontrol" onkeyup="search()" id="text" placeholder="Search Vehicle Details">
+</div>
+<table class="table table-striped" id="table" >
+<thead>
+<tr>
+<th>Owner Name</th>
+<th>Vehicle Name</th>
+<th>Vehicle Number</th>
+<th>Entry Date</th>
+<th>Exit Date</th>
+<th>Delete Record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sai Manikanta Vivek Suthari</td>
+<td>suzuki</td>
+<td>UP 83 A 8090 </td>
+<td> 25/09/2021 </td>
+<td>28/09/2021</td>
+<td><a href="delete-inline.php">Delete</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<script>
+</script>
+</body>
+</html>
